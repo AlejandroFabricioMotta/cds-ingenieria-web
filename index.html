@@ -61,7 +61,7 @@
 </section>
 
 <!-- 1b. CARRUSEL: plantas automotrices y clientes (recuperado de la web actual) -->
-<section class="carrusel" id="clientes" aria-roledescription="carrusel" aria-label="Plantas automotrices y empresas con las que trabajamos">
+<section class="carrusel" id="clientes" aria-roledescription="carrusel" aria-label="Plantas industriales y empresas con las que trabajamos">
   <div class="contenedor carrusel__cabecera">
     <div>
       <span class="sobretitulo">Industria automotriz y manufacturera</span>
@@ -74,32 +74,87 @@
     </div>
   </div>
   <div class="carrusel__ventana">
-    <ul class="carrusel__pista" id="carPista" tabindex="0" aria-label="Imágenes: desplácese con las flechas del teclado o los botones">
-        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/01-logo-gm.jpg" width="360" height="360" alt="Logo de General Motors" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/02-lector-barcode-posicionamiento.jpg" width="522" height="360" alt="Lector de código de barras de un sistema de posicionamiento absoluto" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/03-tablero-andon.jpg" width="700" height="293" alt="Tablero Andon en una línea de ensamble" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/04-robot-celda-ensamble.jpg" width="300" height="170" alt="Robot industrial en una celda de ensamble" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/05-modulo-shienenbus.jpg" width="218" height="164" alt="Módulo del sistema Shienenbus montado sobre electrovía" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/06-electrovias-linea-elevada.jpg" width="519" height="360" alt="Electrovías de una línea elevada de ensamble" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/07-operarios-linea-ensamble.jpg" width="643" height="360" alt="Operarios trabajando en una línea de ensamble automotriz" loading="lazy"></li>
-        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/08-logo-peugeot.jpg" width="360" height="360" alt="Logo de Peugeot" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/09-celda-ensamble-planta.jpg" width="309" height="360" alt="Celda de ensamble en una planta industrial" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/10-carroceria-en-linea.jpg" width="639" height="360" alt="Carrocería avanzando por una línea de producción" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/11-soldadura-robotizada.jpg" width="512" height="354" alt="Soldadura robotizada de una carrocería" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/12-agv.jpg" width="472" height="360" alt="Vehículo de guiado automático (AGV) en una planta" loading="lazy"></li>
-        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/13-logo-ford.jpg" width="224" height="168" alt="Logo de Ford" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/14-linea-tableros.jpg" width="543" height="360" alt="Línea de montaje de tableros de instrumentos" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/15-utillaje-linea.jpg" width="641" height="360" alt="Utillaje de una línea de producción" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/16-linea-carrocerias.jpg" width="542" height="360" alt="Línea de ensamble de carrocerías" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/17-realidad-virtual-ingenieria.jpg" width="300" height="168" alt="Profesional de ingeniería con realidad virtual frente a pantallas de supervisión" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/18-operario-ensamble-inferior.jpg" width="643" height="360" alt="Operario trabajando en la parte inferior de un vehículo en la línea" loading="lazy"></li>
-        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/19-logo-vw.jpg" width="480" height="360" alt="Logo de Volkswagen" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/20-vehiculo-linea-elevada.jpg" width="356" height="360" alt="Camioneta en una línea elevada de ensamble" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/21-sala-supervision.jpg" width="469" height="360" alt="Sala de supervisión con múltiples pantallas" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/22-linea-ensamble-vehiculos.jpg" width="643" height="360" alt="Línea de ensamble de vehículos" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/23-linea-de-asientos.jpg" width="522" height="360" alt="Operarios en una línea de ensamble de asientos" loading="lazy"></li>
-        <li class="carrusel__item"><img src="img/carrusel/24-agv-transporte-cajas.jpg" width="469" height="360" alt="AGV transportando cajas sobre una línea de rodillos" loading="lazy"></li>
-    </ul>
+    <div class="carrusel__pista" id="carPista" tabindex="0" role="group" aria-label="Imágenes: desplácese con las flechas del teclado o con los botones">
+    <div class="carrusel__filas">
+      <ul class="carrusel__fila carrusel__fila--a">
+        <li class="carrusel__item" style="--r:1.777;"><img src="img/galeria/equipo-ingenieros.jpg" width="604" height="340" alt="Equipo de ingenieros con casco y chaleco conversando en una planta" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.272;"><img src="img/galeria/tablero-baja-tension.jpg" width="432" height="340" alt="Técnico trabajando en un tablero eléctrico con interruptor de baja tensión" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.0; --bg:#fafafa;"><img src="img/galeria/logo-gm.jpg" width="300" height="300" alt="Logo de General Motors" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.862;"><img src="img/galeria/diagrama-gantt.jpg" width="633" height="340" alt="Mano trazando un diagrama de Gantt sobre un cronograma impreso" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.405;"><img src="img/galeria/tecnicos-subestacion.jpg" width="478" height="340" alt="Técnicos trabajando en una subestación eléctrica de alta tensión" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.405;"><img src="img/galeria/carne-asada.jpg" width="478" height="340" alt="Corte de carne vacuna asada" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.443;"><img src="img/galeria/electrovias-linea-elevada.jpg" width="491" height="340" alt="Electrovías de una línea elevada de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.312;"><img src="img/galeria/agv-planta.jpg" width="446" height="340" alt="Vehículo de guiado automático (AGV) en una planta" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.506;"><img src="img/galeria/linea-carrocerias.jpg" width="512" height="340" alt="Línea de ensamble de carrocerías" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.018; --bg:#ffffff;"><img src="img/galeria/logo-peugeot.jpg" width="305" height="300" alt="Logo de Peugeot" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.405;"><img src="img/galeria/papel-higienico-profesional.jpg" width="478" height="340" alt="Rollos de papel higiénico de uso profesional" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.778;"><img src="img/galeria/celda-media-tension.jpg" width="604" height="340" alt="Maniobra manual sobre una celda de media tensión" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.455;"><img src="img/galeria/ingreso-camiones.jpg" width="495" height="340" alt="Camión ingresando a una planta por un control de acceso" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.509;"><img src="img/galeria/linea-tableros.jpg" width="513" height="340" alt="Operarios montando tableros de instrumentos en una línea de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.786;"><img src="img/galeria/realidad-virtual-ingenieria.jpg" width="300" height="168" alt="Profesional de ingeniería con realidad virtual frente a pantallas de supervisión" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.459;"><img src="img/galeria/ranger-fin-de-linea.jpg" width="496" height="340" alt="Camioneta pick-up y operarios al final de la línea de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.333; --bg:#ffffff;"><img src="img/galeria/logo-ford.jpg" width="224" height="168" alt="Logo de Ford" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.385;"><img src="img/galeria/alimento-mascotas-purina.jpg" width="471" height="340" alt="Alimento balanceado para mascotas de una planta de Purina" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.728;"><img src="img/galeria/seguimiento-obra.jpg" width="587" height="340" alt="Equipo con cascos revisando planos y una tablet" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.0;"><img src="img/galeria/llenadoras-aceite.jpg" width="340" height="340" alt="Llenadoras de aceite con cilindros de dosificación" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:0.989;"><img src="img/galeria/amarok-linea-elevada.jpg" width="336" height="340" alt="Camioneta elevada en una línea de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.78;"><img src="img/galeria/utillaje-suspensiones.jpg" width="605" height="340" alt="Utillaje de una línea de suspensiones" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.303;"><img src="img/galeria/agv-cajas.jpg" width="443" height="340" alt="AGV transportando cajas sobre una línea de rodillos" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.229; --bg:#ffffff;"><img src="img/galeria/logo-vw.jpg" width="369" height="300" alt="Logo de Volkswagen" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.458;"><img src="img/galeria/chasis-camioneta-transportador.jpg" width="496" height="340" alt="Chasis de camioneta avanzando sobre un transportador naranja" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.405;"><img src="img/galeria/malla-acero.jpg" width="478" height="340" alt="Malla de alambre de acero" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.499;"><img src="img/galeria/ingenieria-planos.jpg" width="510" height="340" alt="Casco y planos sobre un escritorio, con un ingeniero al fondo" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.8;"><img src="img/galeria/andon-mejora-continua.jpg" width="612" height="340" alt="Tableros Andon con metas y eficiencia sobre una línea de producción" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.9;"><img src="img/galeria/modulo-electrovia-verde.jpg" width="649" height="340" alt="Módulo electrónico verde montado sobre un riel de electrovía" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.526;"><img src="img/galeria/ensamble-chasis-rolling.jpg" width="519" height="340" alt="Operarios ensamblando un chasis en la línea rolling" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.334; --bg:#ffffff;"><img src="img/galeria/logo-paladini.jpg" width="400" height="300" alt="Logo de Paladini" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.455;"><img src="img/galeria/operario-bajo-vehiculo.jpg" width="495" height="340" alt="Operario trabajando bajo un vehículo blanco en la línea" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.328;"><img src="img/galeria/ingenieros-pantallas.jpg" width="452" height="340" alt="Dos ingenieros con ropa de seguridad analizando información en pantallas" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.766;"><img src="img/galeria/exoesqueleto-herramienta.jpg" width="600" height="340" alt="Operario con exoesqueleto sosteniendo una herramienta en alto" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.778;"><img src="img/galeria/transportadores-linea.jpg" width="604" height="340" alt="Operarios bajo un vehículo en una línea con transportadores" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.452;"><img src="img/galeria/carroceria-elevada-operarios.jpg" width="494" height="340" alt="Carrocería elevada sobre una línea de ensamble con operarios debajo" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.132; --bg:#ffffff;"><img src="img/galeria/logo-unilever.jpg" width="340" height="300" alt="Logo de Unilever" loading="lazy" decoding="async"></li>
+      </ul>
+      <ul class="carrusel__fila carrusel__fila--b">
+        <li class="carrusel__item" style="--r:1.786;"><img src="img/galeria/linea-ensamble-vehiculos.jpg" width="607" height="340" alt="Línea de ensamble de vehículos con transportadores elevados" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.504;"><img src="img/galeria/cosecha-soja.jpg" width="511" height="340" alt="Cosecha de soja descargada en una tolva" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.765;"><img src="img/galeria/robot-celda-ensamble.jpg" width="300" height="170" alt="Robot industrial en una celda de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.787;"><img src="img/galeria/operarios-exoesqueleto.jpg" width="608" height="340" alt="Operarios con exoesqueleto trabajando en una línea de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.9;"><img src="img/galeria/tablero-andon.jpg" width="700" height="293" alt="Tablero Andon sobre una línea de ensamble" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.778; --bg:#ffffff;"><img src="img/galeria/logo-molinos.jpg" width="533" height="300" alt="Logo de Molinos" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.329;"><img src="img/galeria/transformador.jpg" width="452" height="340" alt="Transformador con conexiones de media tensión" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.742;"><img src="img/galeria/hilados-textil.jpg" width="592" height="340" alt="Hilos de colores en una máquina textil" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.305;"><img src="img/galeria/arc-flash-tableros.jpg" width="444" height="340" alt="Técnico con equipo de protección frente a tableros eléctricos" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.302;"><img src="img/galeria/sala-supervision.jpg" width="443" height="340" alt="Sala de supervisión con múltiples pantallas" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.329;"><img src="img/galeria/modulo-shienenbus.jpg" width="218" height="164" alt="Módulo del sistema Shienenbus montado sobre electrovía" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.446;"><img src="img/galeria/soldadura-robotizada.jpg" width="492" height="340" alt="Soldadura robotizada de una carrocería" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:2.0; --bg:#ffffff;"><img src="img/galeria/logo-nestle.jpg" width="700" height="232" alt="Logo de Nestlé" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.401;"><img src="img/galeria/corte-acero-chispas.jpg" width="476" height="340" alt="Corte con chispas sobre una chapa de acero" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.45;"><img src="img/galeria/tablero-plc.jpg" width="493" height="340" alt="Técnico cableando un tablero de automatización con PLC" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.8;"><img src="img/galeria/gestion-informacion.jpg" width="612" height="340" alt="Esquema ilustrado de gestión de la información y la calidad" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.775;"><img src="img/galeria/carroceria-exoesqueleto.jpg" width="603" height="340" alt="Carrocería en línea con operarios, uno de ellos con exoesqueleto" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.451;"><img src="img/galeria/lector-codigo-barras.jpg" width="493" height="340" alt="Lector de código de barras de un sistema de posicionamiento absoluto" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.449;"><img src="img/galeria/linea-asientos.jpg" width="493" height="340" alt="Operarios en una línea de ensamble de asientos" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.776; --bg:#ffffff;"><img src="img/galeria/logo-cargill.jpg" width="380" height="214" alt="Logo de Cargill" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.101;"><img src="img/galeria/procesamiento-carne.jpg" width="374" height="340" alt="Carne vacuna colgada en una línea de procesamiento" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.504;"><img src="img/galeria/centro-distribucion.jpg" width="400" height="266" alt="Centro de distribución con andenes de carga" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.405;"><img src="img/galeria/hilado-algodon.jpg" width="478" height="340" alt="Cabos de algodón enrollados en una planta textil" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.285;"><img src="img/galeria/tableros-de-control.jpg" width="437" height="340" alt="Pantallas, tablet y celular con tableros de control" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.748;"><img src="img/galeria/barrera-ingreso-camiones.jpg" width="594" height="340" alt="Camión frente a una barrera de control de ingreso" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.785;"><img src="img/galeria/operario-exoesqueleto-inferior.jpg" width="607" height="340" alt="Operario con exoesqueleto trabajando bajo un vehículo" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:2.0; --bg:#ffffff;"><img src="img/galeria/logo-viterra.jpg" width="700" height="227" alt="Logo de Viterra" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.538;"><img src="img/galeria/linea-produccion-vehiculos.jpg" width="523" height="340" alt="Fila de vehículos en una línea de producción" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.5;"><img src="img/galeria/realidad-aumentada.jpg" width="510" height="340" alt="Realidad aumentada sobre un equipo industrial vista desde un celular" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.782;"><img src="img/galeria/seguridad-emergencia.jpg" width="606" height="340" alt="Celda de seguridad con botón de emergencia" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.445;"><img src="img/galeria/tablero-andon-linea.jpg" width="491" height="340" alt="Tablero Andon con indicadores rojos y verdes sobre la línea de producción" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:0.857;"><img src="img/galeria/celda-ensamble-planta.jpg" width="291" height="340" alt="Celda de ensamble en una planta industrial" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:0.994;"><img src="img/galeria/vehiculos-fin-de-linea.jpg" width="338" height="340" alt="Operarios junto a una fila de vehículos recién ensamblados" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item carrusel__item--logo" style="--r:1.0; --bg:#ffffff;"><img src="img/galeria/logo-rafaela-alimentos.jpg" width="146" height="146" alt="Logo de Rafaela Alimentos" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.505;"><img src="img/galeria/celda-ensamble-control.jpg" width="512" height="340" alt="Celda de ensamble con dispositivos y pantallas de control" loading="lazy" decoding="async"></li>
+        <li class="carrusel__item" style="--r:1.9;"><img src="img/galeria/linea-carrocerias-vista-superior.jpg" width="700" height="336" alt="Línea de carrocerías en una planta automotriz" loading="lazy" decoding="async"></li>
+      </ul>
+    </div>
+    </div>
   </div>
 </section>
 
