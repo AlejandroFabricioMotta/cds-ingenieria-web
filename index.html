@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CDS Ingeniería | Gestión de Proyectos y Paradas de Planta (ShowDown)</title>
+  <meta name="description" content="Project Management Service para proyectos de ingeniería y construcción industrial y paradas programadas de planta (ShowDown). Más de 20 años de trayectoria, desde 2001.">
+  <meta name="robots" content="index, follow">
+  <!-- PENDIENTE: reemplazar DOMINIO por el dominio definitivo (sin barra final) -->
+  <link rel="canonical" href="https://DOMINIO/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CDS Ingeniería">
+  <meta property="og:title" content="CDS Ingeniería | Gestión de Proyectos y Paradas de Planta (ShowDown)">
+  <meta property="og:description" content="Somos su PMO externa: tiempo, costo y continuidad operativa en proyectos industriales críticos.">
+  <meta property="og:image" content="https://DOMINIO/img/banner-conceptual.jpg">
+  <meta property="og:url" content="https://DOMINIO/">
+  <meta name="theme-color" content="#10284D">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="menu">
+  <div class="contenedor menu__interior">
+    <a class="menu__logo" href="#inicio" aria-label="CDS Ingeniería, ir al inicio">
+      <img src="img/logo-cds.png" width="580" height="196" alt="CDS Ingeniería">
+    </a>
+    <button class="menu__boton" id="menuBoton" aria-expanded="false" aria-controls="menuNav">Menú</button>
+    <nav class="menu__nav" id="menuNav" aria-label="Principal">
+      <a href="#servicio">Servicio</a>
+      <a href="#showdown">ShowDown</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#casos">Casos de éxito</a>
+      <a class="boton boton--menu" href="#contacto">Contactar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. INICIO -->
+<section class="portada" id="inicio">
+  <div class="contenedor">
+    <span class="sobretitulo" style="color:#8FD3CB">Project Management Service</span>
+    <h1>Gestión de Proyectos de Ingeniería y Construcción de Procesos Industriales</h1>
+    <p class="bajada">Más de 20 años gestionando proyectos críticos y Paradas Programadas de Planta (ShowDown) en la industria automotriz y alimenticia. Acompañamos a nuestros clientes como Project Managers industriales, asegurando tiempo, costo y continuidad operativa.</p>
+    <div class="portada__acciones">
+      <a class="boton" href="#contacto">Conversemos su proyecto</a>
+      <a class="boton boton--borde" href="#casos">Ver casos de éxito</a>
+    </div>
+    <!-- PENDIENTE DE CONFIRMAR: cifras tomadas de la web actual (Soluciones) -->
+    <div class="cifras" aria-label="CDS Ingeniería en cifras">
+      <div class="cifra"><strong>2001</strong><span>Año de establecimiento</span></div>
+      <div class="cifra"><strong>572</strong><span>Proyectos completados</span></div>
+      <div class="cifra"><strong>42</strong><span>Paradas de planta (ShowDown)</span></div>
+      <div class="cifra"><strong>11</strong><span>Reconocimientos internacionales</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 1b. CARRUSEL: plantas automotrices y clientes (recuperado de la web actual) -->
+<section class="carrusel" id="clientes" aria-roledescription="carrusel" aria-label="Plantas automotrices y empresas con las que trabajamos">
+  <div class="contenedor carrusel__cabecera">
+    <div>
+      <span class="sobretitulo">Industria automotriz y manufacturera</span>
+      <h2>Trabajamos donde la producción no puede parar</h2>
+    </div>
+    <div class="carrusel__controles">
+      <button type="button" class="carrusel__btn" id="carAnterior" aria-label="Imagen anterior">&#8249;</button>
+      <button type="button" class="carrusel__btn" id="carPausa" aria-label="Pausar el movimiento automático" aria-pressed="false">&#10074;&#10074;</button>
+      <button type="button" class="carrusel__btn" id="carSiguiente" aria-label="Imagen siguiente">&#8250;</button>
+    </div>
+  </div>
+  <div class="carrusel__ventana">
+    <ul class="carrusel__pista" id="carPista" tabindex="0" aria-label="Imágenes: desplácese con las flechas del teclado o los botones">
+        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/01-logo-gm.jpg" width="360" height="360" alt="Logo de General Motors" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/02-lector-barcode-posicionamiento.jpg" width="522" height="360" alt="Lector de código de barras de un sistema de posicionamiento absoluto" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/03-tablero-andon.jpg" width="700" height="293" alt="Tablero Andon en una línea de ensamble" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/04-robot-celda-ensamble.jpg" width="300" height="170" alt="Robot industrial en una celda de ensamble" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/05-modulo-shienenbus.jpg" width="218" height="164" alt="Módulo del sistema Shienenbus montado sobre electrovía" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/06-electrovias-linea-elevada.jpg" width="519" height="360" alt="Electrovías de una línea elevada de ensamble" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/07-operarios-linea-ensamble.jpg" width="643" height="360" alt="Operarios trabajando en una línea de ensamble automotriz" loading="lazy"></li>
+        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/08-logo-peugeot.jpg" width="360" height="360" alt="Logo de Peugeot" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/09-celda-ensamble-planta.jpg" width="309" height="360" alt="Celda de ensamble en una planta industrial" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/10-carroceria-en-linea.jpg" width="639" height="360" alt="Carrocería avanzando por una línea de producción" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/11-soldadura-robotizada.jpg" width="512" height="354" alt="Soldadura robotizada de una carrocería" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/12-agv.jpg" width="472" height="360" alt="Vehículo de guiado automático (AGV) en una planta" loading="lazy"></li>
+        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/13-logo-ford.jpg" width="224" height="168" alt="Logo de Ford" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/14-linea-tableros.jpg" width="543" height="360" alt="Línea de montaje de tableros de instrumentos" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/15-utillaje-linea.jpg" width="641" height="360" alt="Utillaje de una línea de producción" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/16-linea-carrocerias.jpg" width="542" height="360" alt="Línea de ensamble de carrocerías" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/17-realidad-virtual-ingenieria.jpg" width="300" height="168" alt="Profesional de ingeniería con realidad virtual frente a pantallas de supervisión" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/18-operario-ensamble-inferior.jpg" width="643" height="360" alt="Operario trabajando en la parte inferior de un vehículo en la línea" loading="lazy"></li>
+        <li class="carrusel__item carrusel__item--logo"><img src="img/carrusel/19-logo-vw.jpg" width="480" height="360" alt="Logo de Volkswagen" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/20-vehiculo-linea-elevada.jpg" width="356" height="360" alt="Camioneta en una línea elevada de ensamble" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/21-sala-supervision.jpg" width="469" height="360" alt="Sala de supervisión con múltiples pantallas" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/22-linea-ensamble-vehiculos.jpg" width="643" height="360" alt="Línea de ensamble de vehículos" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/23-linea-de-asientos.jpg" width="522" height="360" alt="Operarios en una línea de ensamble de asientos" loading="lazy"></li>
+        <li class="carrusel__item"><img src="img/carrusel/24-agv-transporte-cajas.jpg" width="469" height="360" alt="AGV transportando cajas sobre una línea de rodillos" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2. SERVICIO PRINCIPAL -->
+<section class="seccion" id="servicio">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="sobretitulo">Servicio principal</span>
+      <h2>Project Management Service: su PMO externa</h2>
+      <p class="bajada">Evitamos el fracaso en proyectos de alta complejidad. Somos el brazo técnico que representa los intereses de la Propiedad, con control total sobre contratistas y presupuestos de gran escala.</p>
+    </div>
+
+    <h3>Por qué una PMO externa y no solo un contratista</h3>
+    <div class="grilla grilla--3" style="margin-bottom:1.6rem">
+      <div class="tarjeta tarjeta--simple"><h3>Triple restricción</h3><p>Protegemos las líneas base de alcance, cronograma (ruta crítica) y presupuesto, con control del valor ganado (EVM).</p></div>
+      <div class="tarjeta tarjeta--simple"><h3>Gestión de cambios</h3><p>Cada solicitud de cambio pasa por un análisis de impacto técnico-económico y por la aprobación de la Propiedad.</p></div>
+      <div class="tarjeta tarjeta--simple"><h3>Riesgos anticipados</h3><p>Identificamos riesgos críticos y diseñamos planes de mitigación y reservas de contingencia.</p></div>
+      <div class="tarjeta tarjeta--simple"><h3>Calidad y adquisiciones</h3><p>Pliegos técnicos rigurosos, análisis comparativo de ofertas y auditoría del cumplimiento normativo (ISO, IATF, HACCP).</p></div>
+      <div class="tarjeta tarjeta--simple"><h3>Flujo financiero</h3><p>Certificamos cada avance real de obra antes de emitir pagos, alineando egresos y progreso físico.</p></div>
+      <div class="tarjeta tarjeta--simple"><h3>Comunicación y reportes</h3><p>Reportes ejecutivos semanales con indicadores clave (KPIs) para decidir sin lidiar con la complejidad diaria.</p></div>
+    </div>
+    <p class="bajada" style="margin-bottom:2.4rem"><strong>Transferencia de activos:</strong> al cierre entregamos el Libro de Lecciones Aprendidas y la documentación conforme a obra, para que el conocimiento quede dentro de su empresa.</p>
+
+    <div class="titulo-seccion">
+      <span class="sobretitulo">Metodología</span>
+      <h2>El Método CDS</h2>
+    </div>
+    <div class="grilla grilla--4 metodo">
+      <div class="tarjeta paso"><h3>Ingeniería de Viabilidad y Pre-Budgeting</h3><p class="lema">El blindaje financiero</p><p>Ingeniería de costos basada en datos históricos y condiciones reales de mercado, para evitar desvíos desde el origen del proyecto.</p></div>
+      <div class="tarjeta paso"><h3>Ingeniería de Licitación y Selección Técnica</h3><p class="lema">El escudo contractual</p><p>Pliegos técnicos y administrativos de alta complejidad y análisis comparativo de ofertas (TCO).</p></div>
+      <div class="tarjeta paso"><h3>Control de Ejecución Multidisciplinar</h3><p class="lema">La orquesta técnica</p><p>Sincronizamos las disciplinas civil, mecánica, eléctrica y de control, y supervisamos la ruta crítica.</p></div>
+      <div class="tarjeta paso"><h3>Cierre Estratégico y Capitalización</h3><p class="lema">La entrega del activo intelectual</p><p>Certificación final de obra, reportes de cierre y entrega del Libro de Lecciones Aprendidas.</p></div>
+    </div>
+
+    <div class="titulo-seccion" style="margin-top:3.4rem">
+      <span class="sobretitulo">Servicios fundamentales</span>
+      <h2>Planificación, Seguimiento y Control, Gestión de Procedimientos</h2>
+    </div>
+    <div class="grilla grilla--3">
+      <article class="tarjeta">
+        <h3>Planificación</h3>
+        <p>Planificamos con técnicas del Project Management y herramientas informáticas especializadas, en forma determinística y probabilística, para obtener un plan más realista.</p>
+        <ul>
+          <li>Plan de Gestión y cronograma con línea base</li>
+          <li>Camino crítico y cash-flow del proyecto</li>
+          <li>Análisis de demanda de recursos e interferencias</li>
+          <li>Curvas "S" y tableros de comando con indicadores</li>
+        </ul>
+        <ul class="herramientas" aria-label="Herramientas"><li>MS Project</li><li>Oracle Primavera P6</li><li>Primavera Risk Analysis</li></ul>
+      </article>
+      <article class="tarjeta">
+        <h3>Seguimiento y Control</h3>
+        <p>Monitoreamos el ciclo completo del proyecto, con la frecuencia que exija su complejidad, para detectar variaciones respecto del plan y corregir a tiempo.</p>
+        <ul>
+          <li>Gestión de cambios documentada (aprobados y rechazados)</li>
+          <li>Control de variaciones de plan y de adicionales</li>
+          <li>Análisis de riesgo: eliminar, reducir o transferir impactos</li>
+          <li>Planificación probabilística con simulación de escenarios</li>
+        </ul>
+      </article>
+      <article class="tarjeta">
+        <h3>Gestión de Procedimientos</h3>
+        <p>Diseñamos y confeccionamos la documentación de gestión y su secuencia de uso, aplicable a proyectos específicos y replicable en proyectos futuros.</p>
+        <ul>
+          <li>Manual guía de procedimientos de gestión</li>
+          <li>Acta constitutiva y enunciado del alcance (templates)</li>
+          <li>Tablero de control con técnica de valor ganado (EVT)</li>
+          <li>Evaluación de contratistas y check-list de cierre</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SHOWDOWN (DIFERENCIAL) -->
+<section class="seccion seccion--oscura" id="showdown">
+  <div class="contenedor showdown">
+    <div>
+      <span class="sobretitulo">Nuestro diferencial</span>
+      <h2>Paradas Programadas de Planta – ShowDown</h2>
+      <p class="bajada">Nos destacamos en la gestión de ShowDown y en la confiabilidad del arranque posterior. Una parada mal coordinada detiene su negocio: la planificamos y la controlamos como un proyecto crítico.</p>
+      <p class="bajada" style="margin-bottom:1.4rem"><span class="etiqueta-sd">42 paradas de planta gestionadas</span></p>
+      <a class="boton" href="#contacto">Planifique su próxima parada</a>
+    </div>
+    <ul class="showdown__lista">
+      <li><strong>Planificación de la parada:</strong> tareas, ruta crítica y recursos en ventanas de tiempo reducidas.</li>
+      <li><strong>Coordinación de gremios y contratistas:</strong> eliminamos interferencias y cuellos de botella.</li>
+      <li><strong>Riesgo cuantificado antes de ejecutar:</strong> planificación probabilística y planes de contingencia.</li>
+      <li><strong>Seguimiento y control durante la parada:</strong> reportes y acciones correctivas a tiempo.</li>
+      <li><strong>Arranque confiable:</strong> ingeniería y planificación que minimizan el riesgo en la puesta en funcionamiento.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. PROYECTOS QUE DOMINAMOS -->
+<section class="seccion seccion--alt" id="proyectos">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="sobretitulo">Tipos de proyectos</span>
+      <h2>Proyectos que gestionamos como Project Manager</h2>
+      <p class="bajada">Conocemos la ingeniería de adentro: eso nos permite gestionar con criterio técnico los proyectos donde la especialidad define el éxito.</p>
+    </div>
+    <div class="grilla grilla--2">
+      <article class="tarjeta">
+        <h3>Soluciones de Automatización para la Industria Automotriz</h3>
+        <p>Actualización de sistemas de control y supervisión (PLC, remotas, HMI y Scada) de líneas de producción en reducidas ventanas de parada.</p>
+        <ul>
+          <li>Conveyors y electrovías (sistemas Shienenbus)</li>
+          <li>Sistemas Andon integrados a la red Ethernet y al ERP</li>
+          <li>Robots y dispositivos de soldadura</li>
+          <li>Sistemas AGV e inducción magnética</li>
+        </ul>
+      </article>
+      <article class="tarjeta">
+        <h3>Estudios Eléctricos en Media y Baja Tensión</h3>
+        <p>Ingeniería de detalle y estudios para la distribución eléctrica de plantas industriales.</p>
+        <ul>
+          <li>Arc Flash, con etiquetas para cada tablero</li>
+          <li>Sistemas de medición comercial SMEC (CAMMESA)</li>
+          <li>Celdas y transformadores de media tensión</li>
+          <li>Capacidad de carga, electrificación y granjas solares</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CASOS DE ÉXITO -->
+<section class="seccion" id="casos">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="sobretitulo">Proyectos ejecutados desde 2001</span>
+      <h2>Casos de éxito</h2>
+      <p class="bajada">Cada proyecto se convirtió en un activo de sabiduría para los que vendrán. Estos son algunos de los realizados para empresas líderes de los sectores automotriz, alimenticio, metalúrgico y energético.</p>
+    </div>
+    <div class="filtros" role="group" aria-label="Filtrar casos">
+      <button class="filtro" data-filtro="todos" aria-pressed="true">Todos (50)</button>
+      <button class="filtro" data-filtro="pm" aria-pressed="false">Gestión de Proyectos (13)</button>
+      <button class="filtro" data-filtro="auto" aria-pressed="false">Automatización (18)</button>
+      <button class="filtro" data-filtro="elec" aria-pressed="false">Estudios Eléctricos MT/BT (19)</button>
+    </div>
+    <div class="grilla grilla--3" id="listaCasos">
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Rafaela Alimentos – Planta Casilda</h3>
+          <p class="caso__desc">Project Manager Service en la línea de Kosher.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Project Management Service: fusión de las líneas Ranger y Focus.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Project Management en la instalación de una nueva línea de Suspensión Trasera y Delantera.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Construction Management Service – Programa VIVA.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Ampliación del edificio administrativo.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Nestlé Purina</h3>
+          <p class="caso__desc">Project Management Service en la ampliación de la nueva línea 4.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Nestlé Purina</h3>
+          <p class="caso__desc">Project Management Service en la construcción del nuevo Centro de Distribución.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Gerdau</h3>
+          <p class="caso__desc">Project Management Service en Parada de Mantenimiento de Planta.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span><span class="etiqueta etiqueta--sd">ShowDown</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Celulosa Argentina</h3>
+          <p class="caso__desc">Project Management Service en proyecto de cambio de serpentina en caldera.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Molinos del Río de la Plata – Planta Tres Cruces</h3>
+          <p class="caso__desc">Ampliación del nuevo Horno Continuo Alkar; minimizar riesgos en la implementación en planta.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Viterra</h3>
+          <p class="caso__desc">Gestión de proyecto: sistema de ingreso de camiones en 14 plantas.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">NetCDS</h3>
+          <p class="caso__desc">Desarrollo de PMO (Project Management Office).</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="pm">
+          <h3 class="caso__cliente">Camargo Correa Argentina</h3>
+          <p class="caso__desc">Desarrollo de procedimientos de gestión de proyectos.</p>
+          <div class="caso__etiquetas"><span class="etiqueta etiqueta--pm">Gestión de Proyectos</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Volkswagen Argentina</h3>
+          <p class="caso__desc">Sistema de posicionamiento absoluto en líneas Rolling, Skyllet y Elevada (Amarok).</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Volkswagen Argentina</h3>
+          <p class="caso__desc">Programación y puesta a punto de la sincronización de la estación de acople de motor Amarok.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Volkswagen Argentina</h3>
+          <p class="caso__desc">Acondicionamiento de electrovías Vahle para el sistema Shienenbus de LJU.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">GM Argentina y VW Argentina</h3>
+          <p class="caso__desc">Diseño e instalación de la red Shienenbus para Body Tracking.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">GM Argentina y VW Argentina</h3>
+          <p class="caso__desc">Colocación de BarCode y programación del sistema de posicionamiento absoluto.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">GM Argentina y VW Argentina</h3>
+          <p class="caso__desc">Sistema de supervisión y control.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Modificación de transportadores en línea de ensamble de vehículos.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Ingeniería Improvement Over Head Conveyor.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Revamping tecnológico de la línea de asientos.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Reubicación de la estación de abastecimiento de combustible.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">General Motors Argentina</h3>
+          <p class="caso__desc">Diseño e instalación del sistema Andon e infraestructura Ethernet (Viva Andon).</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Reforma del sistema de control OHC, línea Focus.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Actualización del sistema de control.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Automatización del almacén y buffer Pintura-Ensamble, línea Ranger.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Automatización del sistema de llenado de aceite, línea Ranger.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Ford Argentina</h3>
+          <p class="caso__desc">Seguridad en cama de selladores, Ranger.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">Peugeot</h3>
+          <p class="caso__desc">Desarrollo de ingeniería de detalle del suministro eléctrico en planta de pintura Polonia.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="auto">
+          <h3 class="caso__cliente">LCD</h3>
+          <p class="caso__desc">Automatización de las barreras de control de ingreso y egreso de camiones.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Automatización</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Oleaginosa Moreno – Puerto Galván, Bahía Blanca</h3>
+          <p class="caso__desc">Estudio de Arc Flash en las celdas de MT de alimentación a los transformadores y en los tableros TGBT.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Cervecería y Maltería Quilmes – Planta Sur</h3>
+          <p class="caso__desc">Estudio de riesgo eléctrico (Arc Flash).</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Sancor</h3>
+          <p class="caso__desc">Estudio de Arc Flash para conocer el grado de peligro al que están expuestos los trabajadores.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Klöckner Pentaplast – Córdoba</h3>
+          <p class="caso__desc">Estudio de riesgo de Arc Flash en la planta.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Nestlé Purina – Santo Tomé</h3>
+          <p class="caso__desc">Estudio de Arc Flash y requisitos mínimos de seguridad para maniobras en equipos de MT y BT.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">AES – Central Termoeléctrica San Nicolás</h3>
+          <p class="caso__desc">Estudio de riesgo de Arc Flash en el generador de arranque en negro.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Swift JBS Argentina</h3>
+          <p class="caso__desc">Asesoramiento y capacitación sobre riesgo eléctrico y procedimiento de operación de equipos eléctricos.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Paladini – Villa Gobernador Gálvez</h3>
+          <p class="caso__desc">Nueva subestación de planta: ingeniería eléctrica y civil para la construcción de una nueva subestación transformadora.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Estudio de cargabilidad</h3>
+          <p class="caso__desc">Estudio eléctrico de cargabilidad de un sistema de producción, con relevamiento de planta y actualización del plano unifilar general.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Nuevo Cerro Dragón – Yacimiento Estancia La Cholita, Santa Cruz</h3>
+          <p class="caso__desc">Electrificación del yacimiento.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Acindar</h3>
+          <p class="caso__desc">Reemplazo de TV 220 kV: proyecto técnico de revamping de los 6 transformadores de medición de tensión (SMEC).</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Hilado SA – Monte Caseros</h3>
+          <p class="caso__desc">Adecuación del sistema de medición comercial SMEC de la planta y cambio de transformador de tensión.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Fibra Papelera – Buenos Aires</h3>
+          <p class="caso__desc">Proyecto SMEC: ingeniería eléctrica para modificar la instalación del sistema de medición existente.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Papelera Samseng – Buenos Aires</h3>
+          <p class="caso__desc">Nueva instalación del sistema de medición comercial SMEC para la planta industrial.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">AES – Central Hidroeléctrica Alicurá</h3>
+          <p class="caso__desc">Adecuación SMEC: reemplazo del medidor con modernización del equipamiento y del esquema de comunicación.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Curtiembre Arlei – Las Toscas, Santa Fe</h3>
+          <p class="caso__desc">Provisión de mano de obra de ingeniería eléctrica y parametrización para el reemplazo del medidor SMEC.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Patagonia Bioenergía – San Lorenzo, Santa Fe</h3>
+          <p class="caso__desc">Adecuación SMEC: soporte de mano de obra e ingeniería eléctrica y parametrización del sistema de medición.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Rafaela Alimentos</h3>
+          <p class="caso__desc">Cambio de celdas de media tensión Schneider Electric.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+        <article class="caso" data-cat="elec">
+          <h3 class="caso__cliente">Gerdau</h3>
+          <p class="caso__desc">Revamping de la subestación principal 33/6,6 kV: reemplazo de interruptores de 33 kV por celdas SM6 de Schneider con protecciones SEPAM.</p>
+          <div class="caso__etiquetas"><span class="etiqueta">Estudios Eléctricos MT/BT</span></div>
+        </article>
+    </div>
+    <p class="casos__nota">Se muestra una selección de proyectos. ¿Busca una referencia específica? <a href="#contacto">Consúltenos</a>.</p>
+  </div>
+</section>
+
+<!-- 6. LECCIONES APRENDIDAS -->
+<section class="seccion seccion--alt" id="sabiduria">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="sobretitulo">Gestión de la Sabiduría</span>
+      <h2>Lecciones aprendidas: su proyecto no pierde lo que aprendió</h2>
+    </div>
+    <p class="bajada" style="max-width:820px">En la ingeniería tradicional, el conocimiento se retira de la planta junto con los contratistas. En CDS transformamos cada proyecto en un activo intelectual permanente para el cliente: con nuestro Libro de Lecciones Aprendidas, apoyado en herramientas de inteligencia artificial, anticipamos riesgos y evitamos repetir errores.</p>
+    <div class="grilla grilla--3" style="margin-top:1.6rem">
+      <div class="tarjeta tarjeta--simple"><h3>Proyectos fuera de plazo</h3></div>
+      <div class="tarjeta tarjeta--simple"><h3>Sobrecostos inesperados</h3></div>
+      <div class="tarjeta tarjeta--simple"><h3>Paradas de planta mal coordinadas</h3></div>
+    </div>
+    <p style="margin-top:1rem">Si su proyecto tiene alguno de estos problemas, podemos asistirle.</p>
+  </div>
+</section>
+
+<!-- 7. CONTACTO -->
+<section class="seccion seccion--oscura" id="contacto">
+  <div class="contenedor contacto">
+    <div>
+      <span class="sobretitulo">Contacto</span>
+      <h2>Conversemos su próximo proyecto o parada de planta</h2>
+      <p class="bajada">Asistimos a todo Latinoamérica. Envíenos un mensaje y lo contactaremos a la brevedad.</p>
+      <ul class="datos">
+        <li><strong>Correo</strong><a href="mailto:info@CDSingenieria.com.ar">info@CDSingenieria.com.ar</a></li>
+        <li><strong>WhatsApp</strong><a href="https://wa.me/5493415421624" rel="noopener">+54 9 341 542 1624</a></li>
+        <li><strong>Dirección</strong>Av. Fuerza Aérea 3104, Funes, Santa Fe (2132), Argentina</li>
+        <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/company/cds-ingenier-a-srl" rel="noopener">CDS Ingeniería SRL</a></li>
+      </ul>
+      <a class="boton boton--borde" href="https://wa.me/5493415421624" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+
+    <form class="formulario" id="formContacto" novalidate>
+      <!-- PENDIENTE: pegar la clave pública de Web3Forms (se genera con el correo de destino) -->
+      <input type="hidden" name="access_key" value="REEMPLAZAR_CON_CLAVE_WEB3FORMS">
+      <input type="hidden" name="subject" value="Nuevo mensaje desde la web de CDS Ingeniería">
+      <input type="hidden" name="from_name" value="Web CDS Ingeniería">
+      <!-- Antispam (honeypot): debe quedar vacío -->
+      <div class="oculto" aria-hidden="true"><label>No completar <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="campo"><label for="nombre">Nombre y apellido *</label><input type="text" id="nombre" name="nombre" required autocomplete="name"></div>
+      <div class="campo"><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa" autocomplete="organization"></div>
+      <div class="campo"><label for="email">Correo electrónico *</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+      <div class="campo"><label for="telefono">Teléfono / WhatsApp</label><input type="tel" id="telefono" name="telefono" autocomplete="tel"></div>
+      <div class="campo"><label for="mensaje">Cuéntenos su proyecto *</label><textarea id="mensaje" name="mensaje" required></textarea></div>
+      <div class="campo campo--check">
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">Acepto que CDS Ingeniería use los datos ingresados para responder esta consulta. *</label>
+      </div>
+      <button class="boton" type="submit" id="enviar">Enviar mensaje</button>
+      <p class="estado" id="estado" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__interior">
+    <img src="img/logo-cds.png" width="580" height="196" alt="CDS Ingeniería" loading="lazy">
+    <div>
+      <div>Gestión de Proyectos de Ingeniería y Construcción en Procesos Industriales</div>
+      <div>2001 – 2026 · Motta &amp; Asoc. · Todos los derechos reservados</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Menú móvil
+  var boton = document.getElementById('menuBoton'), nav = document.getElementById('menuNav');
+  boton.addEventListener('click', function () {
+    var abierto = nav.classList.toggle('abierto');
+    boton.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { nav.classList.remove('abierto'); boton.setAttribute('aria-expanded', 'false'); }
+  });
+
+  // Filtro de casos
+  var filtros = document.querySelectorAll('.filtro'), casos = document.querySelectorAll('.caso');
+  filtros.forEach(function (f) {
+    f.addEventListener('click', function () {
+      var cat = f.getAttribute('data-filtro');
+      filtros.forEach(function (x) { x.setAttribute('aria-pressed', x === f ? 'true' : 'false'); });
+      casos.forEach(function (c) { c.hidden = !(cat === 'todos' || c.getAttribute('data-cat') === cat); });
+    });
+  });
+
+  // Carrusel: desplazamiento con botones, automático lento, pausable (y desactivado si el usuario reduce el movimiento)
+  var pista = document.getElementById('carPista'), btnA = document.getElementById('carAnterior'),
+      btnS = document.getElementById('carSiguiente'), btnP = document.getElementById('carPausa');
+  var reducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pausado = reducido, timer = null;
+  function paso() { return Math.max(pista.clientWidth * 0.7, 240); }
+  function mover(dir) {
+    var fin = pista.scrollWidth - pista.clientWidth - 4;
+    if (dir > 0 && pista.scrollLeft >= fin) pista.scrollTo({ left: 0, behavior: reducido ? 'auto' : 'smooth' });
+    else if (dir < 0 && pista.scrollLeft <= 4) pista.scrollTo({ left: fin, behavior: reducido ? 'auto' : 'smooth' });
+    else pista.scrollBy({ left: dir * paso(), behavior: reducido ? 'auto' : 'smooth' });
+  }
+  function iniciar() { detener(); if (!pausado) timer = setInterval(function () { mover(1); }, 4500); }
+  function detener() { if (timer) { clearInterval(timer); timer = null; } }
+  function actualizarPausa() {
+    btnP.setAttribute('aria-pressed', pausado ? 'true' : 'false');
+    btnP.innerHTML = pausado ? '&#9654;' : '&#10074;&#10074;';
+    btnP.setAttribute('aria-label', pausado ? 'Reanudar el movimiento automático' : 'Pausar el movimiento automático');
+  }
+  btnA.addEventListener('click', function () { mover(-1); });
+  btnS.addEventListener('click', function () { mover(1); });
+  btnP.addEventListener('click', function () { pausado = !pausado; actualizarPausa(); iniciar(); });
+  pista.addEventListener('mouseenter', detener);
+  pista.addEventListener('mouseleave', iniciar);
+  pista.addEventListener('focusin', detener);
+  pista.addEventListener('touchstart', detener, { passive: true });
+  pista.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); mover(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); mover(-1); }
+  });
+  actualizarPausa(); iniciar();
+
+  // Formulario (Web3Forms, sin servidor propio)
+  var form = document.getElementById('formContacto'), estado = document.getElementById('estado'), enviar = document.getElementById('enviar');
+  var WHATSAPP = 'https://wa.me/5493415421624';
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    estado.className = 'estado'; estado.textContent = '';
+    if (!form.nombre.value.trim() || !form.email.value.trim() || !form.mensaje.value.trim() || !form.acepto.checked) {
+      estado.className = 'estado estado--error';
+      estado.textContent = 'Complete los campos obligatorios (*) y acepte el uso de datos.';
+      return;
+    }
+    if (form.botcheck.checked) return;
+    enviar.disabled = true; estado.textContent = 'Enviando…';
+    var datos = {}; new FormData(form).forEach(function (v, k) { datos[k] = v; });
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(datos)
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (j.success) {
+        estado.className = 'estado estado--ok';
+        estado.textContent = 'Gracias por contactarnos. Le responderemos a la brevedad.';
+        form.reset();
+      } else { throw new Error('rechazado'); }
+    }).catch(function () {
+      estado.className = 'estado estado--error';
+      estado.innerHTML = 'No pudimos enviar el mensaje. Escríbanos por <a href="' + WHATSAPP + '">WhatsApp</a> o a info@CDSingenieria.com.ar.';
+    }).finally(function () { enviar.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
