@@ -122,6 +122,9 @@ li { margin-bottom: .35em; }
 .tarjeta h3 { margin-bottom: .5em; }
 .tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
 .tarjeta--simple { border-top-width: 1px; box-shadow: none; }
+.tarjeta--img { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.tarjeta--img img { display: block; width: 100%; height: auto; aspect-ratio: 540 / 280; object-fit: cover; }
+.tarjeta--img .tarjeta__cuerpo { padding: 22px 26px 26px; }
 .tarjeta__num {
   display: inline-block; font-family: var(--fuente-titulos); font-size: 1.8rem; color: var(--color-acento-oscuro);
   margin-bottom: .2rem;
