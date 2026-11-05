@@ -276,3 +276,12 @@ li { margin-bottom: .35em; }
   .carrusel { --alto-car: 130px; padding: 40px 0 36px; }
   .carrusel__fila--b { margin-left: 60px; }
 }
+
+/* ---------- Lecciones aprendidas: texto + tapa del libro ---------- */
+.sabiduria { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 48px; align-items: center; }
+.sabiduria__tapa { margin: 0; }
+.sabiduria__tapa img { display: block; width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--color-borde); box-shadow: 0 14px 34px rgba(0, 30, 70, .22); transform: rotate(1.5deg); }
+@media (max-width: 860px) {
+  .sabiduria { grid-template-columns: 1fr; gap: 32px; }
+  .sabiduria__tapa { max-width: 280px; }
+}
