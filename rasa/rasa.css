@@ -105,3 +105,5 @@ body.rs { background: var(--color-fondo); }
 
 .rs-fig--vert { max-width: 340px; }
 .rs-fig--vert img { aspect-ratio: 3 / 4; object-fit: cover; }
+.rs-fig--horiz { max-width: 560px; }
+.rs-fig--horiz img { aspect-ratio: 3 / 2; object-fit: cover; }
