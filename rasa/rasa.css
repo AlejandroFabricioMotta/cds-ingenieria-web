@@ -102,3 +102,6 @@ body.rs { background: var(--color-fondo); }
 @media print { .menu { display: none; } }
 .rs-par { align-items: start; }
 .rs-par .rs-fig img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+.rs-fig--vert { max-width: 340px; }
+.rs-fig--vert img { aspect-ratio: 3 / 4; object-fit: cover; }
