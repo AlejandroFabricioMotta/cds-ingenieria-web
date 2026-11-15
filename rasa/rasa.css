@@ -108,3 +108,10 @@ body.rs { background: var(--color-fondo); }
 .rs-fig--horiz { max-width: 560px; }
 .rs-fig--horiz img { aspect-ratio: 3 / 2; object-fit: cover; }
 .rs-nota-pend { margin-bottom: 1rem; }
+
+/* Tarjeta "Mejoras Recomendadas": amarillo pastel para diferenciarla de las tareas */
+.rs-bloque--mejoras { background: #FFF6D6; border: 1px solid #F0DE9C; border-left: 4px solid #E3B505; }
+.rs-bloque--mejoras ul { margin: .4rem 0 .8rem; padding-left: 1.3rem; }
+.rs-bloque--mejoras li { margin: .25rem 0; }
+.rs-mejoras__alerta { background: #FFFBEA; border-left: 4px solid #B88900; border-radius: 4px; padding: 12px 16px; margin-top: 1rem; }
+.rs-mejoras__alerta strong { color: #6B4700; }
